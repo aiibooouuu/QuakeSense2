@@ -1,0 +1,25 @@
+{
+    "name": "quakesense",
+    "version": "1.0.0",
+    "description": "Earthquake prediction dashboard using the USGS API",
+    "scripts": {
+        "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+        "start": "npm run start --prefix backend",
+        "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\""
+    },
+    "keywords": [
+        "earthquake",
+        "dashboard",
+        "usgs",
+        "vite",
+        "express"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    },
+    "dependencies": {
+        "nodemon": "^3.1.9"
+    }
+}

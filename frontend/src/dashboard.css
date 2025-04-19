@@ -1,0 +1,207 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Root and body adjustments to prevent horizontal scrolling */
+html, body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+  width: 100vw;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  width: 100vw;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Underline for the title */
+.dashboard-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #7f2032;
+  margin: 10px auto 20px auto;
+}
+
+/* Masonry grid layout */
+.dashboard-flex {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d b"
+    "e f g"
+    "h i i";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Assign grid areas to each item */
+.dashboard-item {
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-item:nth-child(1) { grid-area: a; }
+.dashboard-item:nth-child(2) { grid-area: b; }
+.dashboard-item:nth-child(3) { grid-area: c; }
+.dashboard-item:nth-child(4) { grid-area: d; }
+.dashboard-item:nth-child(5) { grid-area: e; }
+.dashboard-item:nth-child(6) { grid-area: f; }
+.dashboard-item:nth-child(7) { grid-area: g; }
+.dashboard-item:nth-child(8) { grid-area: h;}
+.dashboard-item:nth-child(9) { grid-area: i; }
+
+/* Add size variation */
+.dashboard-item:nth-child(1), .dashboard-item:nth-child(2), .dashboard-item:nth-child(9) {
+  min-height: 200px;
+}
+
+.dashboard-item:nth-child(5), .dashboard-item:nth-child(6), .dashboard-item:nth-child(7) {
+  min-height: 100px;
+}
+
+/* Hover effect */
+.dashboard-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Graph title */
+.dashboard-item-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #444;
+}
+
+/* Graph content */
+.dashboard-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.dashboard-item-content canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 280px;
+}
+
+/* Correlation matrix styling */
+.correlation-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.correlation-matrix th,
+.correlation-matrix td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.correlation-matrix th {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.correlation-matrix td {
+  background-color: #ffffff;
+}
+
+/* Leaflet map */
+.leaflet-container {
+  width: 100% !important;
+  height: 300px !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Additional general styles */
+button, input[type="submit"] {
+  background-color: #7f2032;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #9b3d4f;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: #7f2032;
+}
+
+.dashboard-container1{
+  display: block;
+  border: 2px solid black;
+}
+
+.dashboard-item-content1{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+
+
+.param-row {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.param-row strong {
+  font-weight: bold;
+}
+
+.param-row span {
+  font-size: 14px;
+  color: #555;
+}

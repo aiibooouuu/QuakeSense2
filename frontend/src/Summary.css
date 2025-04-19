@@ -1,0 +1,32 @@
+.summary-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.summary-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.param-row {
+    background-color: #f9f9f9; /* light background for contrast */
+    margin: 10px 0;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* light subtle shadow */
+    border-radius: 10px; /* optional for rounded corners */
+}
+
+.param-row strong {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.param-row span {
+    font-size: 20px;
+    color: black; /* slightly darker text for better readability */
+}
