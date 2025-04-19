@@ -1,0 +1,148 @@
+#root{
+  background-color: black;
+  background-image: 
+    linear-gradient(to right, rgba(13, 150, 50, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 150, 50, 0.4) 1px, transparent 1px);
+  background-size: 5px 5px; 
+  height: 90%;
+}
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  height: 90%;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a2639; /* Deep navy blue */
+  color: #fefae0; /* Light cream text */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo .logo {
+  width: 80px; /* Adjust the width of the logo */
+  height: 80px; /* Adjust the height of the logo */
+  margin-right: 5px; /* Space between logo and text */
+}
+
+.navbar-links a {
+  margin: 0 10px;
+  color: #fefae0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: greenyellow; 
+  font-weight: 600;
+  text-decoration: none;/* Change color on hover */
+}
+
+
+/* Grid Layout */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.form-section {
+  grid-row: span 2;
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000066;
+  overflow: scroll;
+}
+
+.form-section .MuiTextField-root {
+  margin-bottom: 1rem;
+  background-color: #0d1117;
+  border-radius: 6px;
+}
+
+.form-section label,
+.form-section input {
+  color: #e6edf3 !important;
+}
+
+.MuiInputBase-root {
+  color: #e6edf3 !important;
+}
+
+.map-section {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000066;
+}
+
+/* Table Output Section */
+.output-section {
+  grid-column: span 1 / -1;
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000066;
+  overflow: scroll;
+  height: 460px;
+  color: white;
+}
+
+.MuiTable-root {
+  background-color: #0d111782;
+  padding: 5px;
+  color: white;
+}
+
+.MuiTableCell-root {
+  color: #c9d1d9;
+}
+
+a {
+  color: #58a6ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button.MuiButton-containedPrimary {
+  background-color: #238636;
+}
+
+button.MuiButton-containedPrimary:hover {
+  background-color: #2ea043;
+}
+
+button.MuiButton-containedSecondary {
+  background-color: #30363d;
+}
+
+button.MuiButton-containedSecondary:hover {
+  background-color: #484f58;
+}
+
+.MuiCircularProgress-root {
+  color: #58a6ff;
+}
+
+/* Typography */
+.MuiTypography-root {
+  color: #e6edf3;
+}
