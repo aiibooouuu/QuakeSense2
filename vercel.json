@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+    {
+        "src": "frontend/package.json",
+        "use": "@vercel/node",
+        "config": {
+        "includeFiles": ["frontend/**"]
+        }
+    },
+    {
+        "src": "frontend/public/**",
+        "use": "@vercel/static"
+    }
+    ],
+    "routes": [
+    {
+        "src": "/(.*)",
+        "dest": "/frontend/$1"
+    }
+    ]
+}
