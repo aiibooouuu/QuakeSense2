@@ -23,12 +23,13 @@ QuakeSense2 is an interactive web dashboard that fetches, visualizes, and analyz
 
 ## 🧠 Tech Stack
 
-| Layer        | Tools Used                      |
-|--------------|----------------------------------|
-| Frontend     | React.js, JavaScript (ES6+) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)    |
-| Visualization| Chart.js (react-chartjs-2)   ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)   |
-| Maps         | Leaflet.js      ![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)                |
-| API Source   | [USGS Earthquake API](https://earthquake.usgs.gov/fdsnws/event/1/) |
+| Layer        | Technology               | Badges |
+|--------------|--------------------------|--------|
+| Frontend     | React.js, JavaScript     | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| Visualization| Chart.js (react-chartjs-2) | ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white) |
+| Maps         | Leaflet.js                | ![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white) |
+| API Source   | [USGS Earthquake API](https://earthquake.usgs.gov/fdsnws/event/1/) | – |
+
 
 
 ---
